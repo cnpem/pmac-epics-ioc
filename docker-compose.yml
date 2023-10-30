@@ -1,0 +1,14 @@
+services:
+  ioc:
+    image: ghcr.io/cnpem/pmac-epics-ioc
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+      target: dynamic-link
+      labels:
+        org.opencontainers.image.source: https://github.com/cnpem/pmac-epics-ioc.git
+      args:
+        REPONAME: pmac
+        RUNDIR: /opt/pmac
+        BUILD_STAGE_VERSION:
+        RUNTIME_PACKAGES: libssh2-1-dev

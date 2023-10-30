@@ -7,4 +7,4 @@ This IOC depends on the Pmac module. https://github.com/dls-controls/pmac
 Developer: Guilherme Rodrigues de Lima
 Email: guilherme.lima@lnls.br
 Company: CNPEM/Sirius - Brazil
-Date: 10/03/2023
+Date: 30/10/2023
