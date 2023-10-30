@@ -1,0 +1,21 @@
+# TODO edit this file to reflect your site dependencies locations
+
+# Variables and paths to dependent modules:
+SUPPORT = /usr/local/epics-nfs/modules/R3.15.6/synApps/R6.2/support
+
+ASYN = $(SUPPORT)/asyn-R4-41
+BUSY = $(SUPPORT)/busy-R1-7-3
+CALC = $(SUPPORT)/calc-R3-7-4
+MOTOR = $(SUPPORT)/motor-R7-2-1
+STREAM= $(SUPPORT)/StreamDevice-2-8-16
+AUTOSAVE = $(SUPPORT)/autosave-R5-10-2
+PMAC = /usr/local/epics-nfs/modules/R3.15.6/pmac/dls-pmac/
+
+RECCASTER = /usr/local/epics-nfs/apps/recsync/1.4_epics_3.15/client
+
+# EPICS_BASE should appear last so earlier modules can override stuff:
+EPICS_BASE = /usr/local/epics-nfs/base/R3.15.6
+
+-include $(TOP)/../../configure/RELEASE.$(EPICS_HOST_ARCH).Common
+-include $(TOP)/../../configure/RELEASE.local.$(EPICS_HOST_ARCH)
+-include $(TOP)/../../configure/RELEASE.local

@@ -1,0 +1,11 @@
+
+record(calc, "$(P):$(G)")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "$(GPIOSRC) NPP NMS")
+    field(B, "$(MASK)")                 # mask
+    field(C, "$(SHIFTR)")               # shift right
+}
+

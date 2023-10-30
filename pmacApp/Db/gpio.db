@@ -1,0 +1,264 @@
+
+record(calc, "$(P):GI00")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "1")                 # mask
+    field(C, "0")               # shift right
+}
+
+
+record(calc, "$(P):GI01")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "2")                 # mask
+    field(C, "1")               # shift right
+}
+
+
+record(calc, "$(P):GI02")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "4")                 # mask
+    field(C, "2")               # shift right
+}
+
+
+record(calc, "$(P):GI03")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "8")                 # mask
+    field(C, "3")               # shift right
+}
+
+
+record(calc, "$(P):GI04")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "16")                 # mask
+    field(C, "4")               # shift right
+}
+
+
+record(calc, "$(P):GI05")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "32")                 # mask
+    field(C, "5")               # shift right
+}
+
+
+record(calc, "$(P):GI06")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "64")                 # mask
+    field(C, "6")               # shift right
+}
+
+
+record(calc, "$(P):GI07")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "128")                 # mask
+    field(C, "7")               # shift right
+}
+
+
+record(calc, "$(P):GI08")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "256")                 # mask
+    field(C, "8")               # shift right
+}
+
+
+record(calc, "$(P):GI09")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "512")                 # mask
+    field(C, "9")               # shift right
+}
+
+
+record(calc, "$(P):GI10")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "1024")                 # mask
+    field(C, "10")               # shift right
+}
+
+
+record(calc, "$(P):GI11")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "2048")                 # mask
+    field(C, "11")               # shift right
+}
+
+
+record(calc, "$(P):GI12")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "4096")                 # mask
+    field(C, "12")               # shift right
+}
+
+
+record(calc, "$(P):GI13")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "8192")                 # mask
+    field(C, "13")               # shift right
+}
+
+
+record(calc, "$(P):GI14")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "16384")                 # mask
+    field(C, "14")               # shift right
+}
+
+
+record(calc, "$(P):GI15")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_INP NPP NMS")
+    field(B, "32768")                 # mask
+    field(C, "15")               # shift right
+}
+
+
+record(calc, "$(P):GO00")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "1")                 # mask
+    field(C, "0")               # shift right
+}
+
+
+record(calc, "$(P):GO01")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "2")                 # mask
+    field(C, "1")               # shift right
+}
+
+
+record(calc, "$(P):GO02")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "4")                 # mask
+    field(C, "2")               # shift right
+}
+
+
+record(calc, "$(P):GO03")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "8")                 # mask
+    field(C, "3")               # shift right
+}
+
+
+record(calc, "$(P):GO04")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "16")                 # mask
+    field(C, "4")               # shift right
+}
+
+
+record(calc, "$(P):GO05")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "32")                 # mask
+    field(C, "5")               # shift right
+}
+
+
+record(calc, "$(P):GO06")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "64")                 # mask
+    field(C, "6")               # shift right
+}
+
+
+record(calc, "$(P):GO07")
+{
+    field(PINI, "YES")
+    field(SCAN, ".2 second")
+    field(CALC, "(A & B) >> C")
+    field(INPA, "BRICK1:READ_GPIO_OUT NPP NMS")
+    field(B, "128")                 # mask
+    field(C, "7")               # shift right
+}
+

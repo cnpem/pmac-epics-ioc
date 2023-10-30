@@ -1,0 +1,40 @@
+file "pmacController.template"
+{
+pattern { PORT, P, NAXES, TIMEOUT, FEEDRATE, CSG0, CSG1, CSG2, CSG3, CSG4, CSG5, CSG6, CSG7 }
+        { "Brick", "COI:A:PB02", "4", "4", "100", "", "", "", "", "", "", "", "" }
+}
+
+file "powerPmacStatus.template"
+{
+pattern { PORT, P }
+        { "Brick", "COI:A:PB02" }
+}
+
+file "pmacStatusAxis.template"
+{
+pattern { PMAC, AXIS, PORT }
+        { "COI:A:PB02", "1", "Brick" }
+        { "COI:A:PB02", "2", "Brick" }
+        { "COI:A:PB02", "3", "Brick" }
+        { "COI:A:PB02", "4", "Brick" }
+}
+
+
+file "dls_pmac_cs_asyn_motor.template" 
+{
+pattern { P            , M        , PORT , ADDR , DESC                            , MRES             , VELO   , PREC, EGU  , TWV   , DTYP        , DIR , VBAS   , VMAX  , ACCL   , BDST , BVEL , BACC , DHLM   , DLLM    , HLM    , LLM     , HLSV    , INIT , SREV   , RRES , ERES , JAR , UEIP , URIP , RDBL ,        RTRY , DLY , OFF , RDBD , FOFF , ADEL , NTM , FEHIGH , FEHIHI , FEHHSV     , FEHSV      , SCALE , HOMEVIS , HOMEVISSTR                 , name        , alh    , gda_name , gda_desc                 , HOME   , PMAC         , CS              }
+        { "COI:A:PB02" , ":CS1:m7", "CS1", "7"  , "AS_SLIT 1 - Vertical Gap"      , "0.000048828125" , "0.55" , "6" , "mm" , "0.1" , "asynMotor" , "0" , "0.50" , "1"   , "0.2"  , "0"  , "0"  , "0"  , "30"   , "0"     , "30"   , "0"     , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   ,        ""   , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "V1_GAP"    , "None" , ""       , "$(DESC)"                , "$(P)" , "COI:A:PB02" , "1"             }
+        { "COI:A:PB02" , ":CS1:m8", "CS1", "8"  , "AS_SLIT 1 - Vertical Offset"   , "0.000048828125" , "0.55" , "6" , "mm" , "0.1" , "asynMotor" , "0" , "0.50" , "1"   , "0.2"  , "0"  , "0"  , "0"  , "15"   , "-15"   , "14"   , "-14"   , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   ,        ""   , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "V1_OFFSET" , "None" , ""       , "$(DESC)"                , "$(P)" , "COI:A:PB02" , "1"             }
+        { "COI:A:PB02" , ":CS2:m7", "CS2", "7"  , "AS_SLIT 1 - Horizontal Gap"    , "0.000048828125" , "0.55" , "6" , "mm" , "0.1" , "asynMotor" , "0" , "0.50" , "1"   , "0.2"  , "0"  , "0"  , "0"  , "30"   , "0"     , "30"   , "0"     , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   ,        ""   , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "H1_GAP"    , "None" , ""       , "$(DESC)"                , "$(P)" , "COI:A:PB02" , "2"             }
+        { "COI:A:PB02" , ":CS2:m8", "CS2", "8"  , "AS_SLIT 1 - Horizontal Offset" , "0.000048828125" , "0.55" , "6" , "mm" , "0.1" , "asynMotor" , "0" , "0.50" , "1"   , "0.2"  , "0"  , "0"  , "0"  , "15"   , "-15"   , "14"   , "-14"   , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   ,        ""   , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "H1_OFFSET" , "None" , ""       , "$(DESC)"                , "$(P)" , "COI:A:PB02" , "2"             }
+}
+
+file "dls_pmac_asyn_motor.template"
+{
+pattern { P            , M     , PORT    , ADDR , DESC                            , MRES             , VELO   , PREC, EGU  , TWV  , DTYP        , DIR , VBAS    , VMAX  , ACCL   , BDST , BVEL , BACC , DHLM   , DLLM    , HLM    , LLM     , HLSV    , INIT , SREV   , RRES , ERES , JAR , UEIP , URIP , RDBL , RLNK , RTRY , DLY , OFF , RDBD , FOFF , ADEL , NTM , FEHIGH , FEHIHI , FEHHSV     , FEHSV      , SCALE , HOMEVIS , HOMEVISSTR                 , name        , alh    , gda_name , gda_desc  , SPORT        , HOME   , PMAC         , ALLOW_HOMED_SET }
+        { "COI:A:PB02" , ":m1" , "Brick" , "1"  , "AS_SLIT 1 - m1 - Top"          , "0.000048828125" , "0.5"  , "6" , "mm" , ".1" , "asynMotor" , "1" , "0.50"  , "1"   , "0.2"  , "0"  , "0"  , "0"  , "14.3" , "-14.4" , "14.3" , "-14.4" , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   , ""   , "0"  , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "M1"        , "None" , ""       , "$(DESC)" , "BRICK1port" , "$(P)" , "COI:A:PB02" , "#"             }
+        { "COI:A:PB02" , ":m2" , "Brick" , "2"  , "AS_SLIT 1 - m2 - Bot"          , "0.000048828125" , "0.5"  , "6" , "mm" , ".1" , "asynMotor" , "0" , "0.50"  , "1"   , "0.2"  , "0"  , "0"  , "0"  , "14.6" , "-14.5" , "14.6" , "-14.5" , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   , ""   , "0"  , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "M2"        , "None" , ""       , "$(DESC)" , "BRICK1port" , "$(P)" , "COI:A:PB02" , "#"             }
+        { "COI:A:PB02" , ":m3" , "Brick" , "3"  , "AS_SLIT 1 - m3 - Right"        , "0.000048828125" , "0.5"  , "6" , "mm" , ".1" , "asynMotor" , "0" , "0.50"  , "1"   , "0.2"  , "0"  , "0"  , "0"  , "14.6" , "-14.5" , "14.6" , "-14.5" , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   , ""   , "0"  , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "M3"        , "None" , ""       , "$(DESC)" , "BRICK1port" , "$(P)" , "COI:A:PB02" , "#"             }
+        { "COI:A:PB02" , ":m4" , "Brick" , "4"  , "AS_SLIT 1 - m4 - Left"         , "0.000048828125" , "0.5"  , "6" , "mm" , ".1" , "asynMotor" , "1" , "0.50"  , "1"   , "0.2"  , "0"  , "0"  , "0"  , "14.5" , "-14.4" , "14.5" , "-14.4" , "MAJOR" , ""   , "8192" , ""   , ""   , ""  , "1"  , "0"  , ""   , ""   , "0"  , "0" , "0" , "0"  , "0"  , "0"  , "1" , "0"    , "0"    , "NO_ALARM" , "NO_ALARM" , "1"   , "1"     , "Use motor summary screen" , "M4"        , "None" , ""       , "$(DESC)" , "BRICK1port" , "$(P)" , "COI:A:PB02" , "#"             }
+}
+

@@ -1,0 +1,34 @@
+# Macros:
+#  P         PV Prefix
+#  G         GPIO NAME
+#  GPIOSRC   GPIO Source canonical name, ex. BRICK1:READ_GPIO_INP
+#  MASK      1<<N, N=0..15
+#  SHIFTR    N=0..15
+file db/gpio.template
+{
+	pattern {P, G, GPIOSRC, MASK, SHIFTR }
+   	{"\$(P)", "GI00", "BRICK1:READ_GPIO_INP", "1", "0" }
+	{"\$(P)", "GI01", "BRICK1:READ_GPIO_INP", "2", "1" }
+	{"\$(P)", "GI02", "BRICK1:READ_GPIO_INP", "4", "2" }
+	{"\$(P)", "GI03", "BRICK1:READ_GPIO_INP", "8", "3" }
+	{"\$(P)", "GI04", "BRICK1:READ_GPIO_INP", "16", "4" }
+	{"\$(P)", "GI05", "BRICK1:READ_GPIO_INP", "32", "5" }
+	{"\$(P)", "GI06", "BRICK1:READ_GPIO_INP", "64", "6" }
+	{"\$(P)", "GI07", "BRICK1:READ_GPIO_INP", "128", "7" }
+	{"\$(P)", "GI08", "BRICK1:READ_GPIO_INP", "256", "8" }
+	{"\$(P)", "GI09", "BRICK1:READ_GPIO_INP", "512", "9" }
+	{"\$(P)", "GI10", "BRICK1:READ_GPIO_INP", "1024", "10" }
+	{"\$(P)", "GI11", "BRICK1:READ_GPIO_INP", "2048", "11" }
+	{"\$(P)", "GI12", "BRICK1:READ_GPIO_INP", "4096", "12" }
+	{"\$(P)", "GI13", "BRICK1:READ_GPIO_INP", "8192", "13" }
+	{"\$(P)", "GI14", "BRICK1:READ_GPIO_INP", "16384", "14" }
+	{"\$(P)", "GI15", "BRICK1:READ_GPIO_INP", "32768", "15" }
+	{"\$(P)", "GO00", "BRICK1:READ_GPIO_OUT", "1", "0" }
+	{"\$(P)", "GO01", "BRICK1:READ_GPIO_OUT", "2", "1" }
+	{"\$(P)", "GO02", "BRICK1:READ_GPIO_OUT", "4", "2" }
+	{"\$(P)", "GO03", "BRICK1:READ_GPIO_OUT", "8", "3" }
+	{"\$(P)", "GO04", "BRICK1:READ_GPIO_OUT", "16", "4" }
+	{"\$(P)", "GO05", "BRICK1:READ_GPIO_OUT", "32", "5" }
+	{"\$(P)", "GO06", "BRICK1:READ_GPIO_OUT", "64", "6" }
+	{"\$(P)", "GO07", "BRICK1:READ_GPIO_OUT", "128", "7" }
+}
