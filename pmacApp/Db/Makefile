@@ -30,6 +30,7 @@ DB_INSTALLS += $(PMAC)/db/pmacDirectMotor.template
 DB_INSTALLS += $(PMAC)/db/pmacController.template
 DB_INSTALLS += $(PMAC)/db/powerPmacStatus.template
 DB_INSTALLS += $(PMAC)/db/pmacStatusAxis.template
+DB_INSTALLS += $(PMAC)/db/pmacVariableWrite.template
 
 include $(TOP)/configure/RULES
 

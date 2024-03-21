@@ -6,9 +6,9 @@ services:
       dockerfile: docker/Dockerfile
       target: dynamic-link
       labels:
-        org.opencontainers.image.source: https://github.com/cnpem/pmac-epics-ioc.git
+        org.opencontainers.image.source: https://github.com/cnpem/pmac-epics-ioc
       args:
         REPONAME: pmac
         RUNDIR: /opt/pmac
-        BUILD_STAGE_VERSION:
+        BUILD_STAGE_VERSION: latest
         RUNTIME_PACKAGES: libssh2-1-dev
