@@ -22,6 +22,7 @@ pmac_DBD += devSoftMotor.dbd
 pmac_DBD += pmacAsynMotorPort.dbd
 pmac_DBD += busySupport.dbd
 pmac_DBD += calcSupport.dbd
+pmac_DBD += asSupport.dbd
 
 # Add all the support libraries needed by this IOC
 pmac_LIBS += calc
@@ -31,6 +32,7 @@ pmac_LIBS += softMotor
 pmac_LIBS += motor
 pmac_LIBS += powerPmacAsynPort
 pmac_LIBS += asyn
+pmac_LIBS += autosave
 
 pmac_LIBS += reccaster
 pmac_DBD += reccaster.dbd
