@@ -1,6 +1,6 @@
 services:
   ioc:
-    image: ghcr.io/cnpem/pmac-epics-ioc
+    image: ghcr.io/cnpem/pmac-epics-ioc:$TAG
     build:
       context: ./
       dockerfile: docker/Dockerfile
