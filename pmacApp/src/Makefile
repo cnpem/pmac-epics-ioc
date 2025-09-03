@@ -23,6 +23,7 @@ pmac_DBD += pmacAsynMotorPort.dbd
 pmac_DBD += busySupport.dbd
 pmac_DBD += calcSupport.dbd
 pmac_DBD += asSupport.dbd
+pmac_DBD += caPutLog.dbd
 
 # Add all the support libraries needed by this IOC
 pmac_LIBS += calc
@@ -33,9 +34,7 @@ pmac_LIBS += motor
 pmac_LIBS += powerPmacAsynPort
 pmac_LIBS += asyn
 pmac_LIBS += autosave
-
-pmac_LIBS += reccaster
-pmac_DBD += reccaster.dbd
+pmac_LIBS += caPutLog
 
 # pmac_registerRecordDeviceDriver.cpp derives from pmac.dbd
 pmac_SRCS += pmac_registerRecordDeviceDriver.cpp
